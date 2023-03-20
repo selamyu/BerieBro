@@ -13,6 +13,7 @@ int max(int num1, int num2){
 }
 
 int main(){
+    printf("Here is the result: ");
     printf("%d", max(5,6));
     return 0;
 }
