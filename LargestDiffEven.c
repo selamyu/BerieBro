@@ -5,28 +5,23 @@ int largestDifferenceOfEvens(int a[], int len)
     int max = 0;
     int count = 0;
 
-    for (int i = 0; i<len; i++)
-    {
+    for (int i = 0; i<len; i++){
         if (a[i] % 2 ==0)
         {
-            if (count == 0)
-            {
+            if (count == 0){
                 min = a[i];
                 max = a[i];
             }
-            else if (a[i] < min)
-            {
+            else if (a[i] < min){
                 min = a[i];
             }
-            else if (a[i] > max)
-            {
+            else if (a[i] > max){
                 max = a[i];
             }
             count++; 
         } 
     }
-    if (count < 2)
-    {
+    if (count < 2){
         return -1;
     }else{
         return max - min;

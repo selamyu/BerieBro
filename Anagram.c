@@ -39,7 +39,7 @@ int areAnagrams(char a1[], char a2[], int len){
 
 int main(){
     char ar1[] = {'s', 'i', 't'};
-    char ar2[] = {'i', 't', 's'};
+    char ar2[] = {'i', 'd', 's'};
     int len = 3;
 
     printf("%d", areAnagrams(ar1, ar2, len));
