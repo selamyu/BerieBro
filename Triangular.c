@@ -17,7 +17,7 @@ int isTriangular(int n){
 }
 
 int main(){
-    int n = 7;
+    int n = 15;
     printf("%d", isTriangular(n));
     return 0;
 }

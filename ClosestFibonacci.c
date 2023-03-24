@@ -23,15 +23,36 @@
 //     }
 // }
 
+
 int closestFibonacci(int n) {
-    int prev = 0, curr = 1;
-    while (curr <= n) {
-        int temp = curr;
-        curr += prev;
-        prev = temp;
+    int prev = 1;
+    int curr = 1;
+    int next = 2;
+
+    while (next <= n) {
+        prev = curr;
+        curr = next;
+        next = prev + curr;
     }
-    return prev;
+
+    return curr;
 }
+
+// int closestFibonacci(int n) {
+
+//     if (n < 1)
+//     {
+//         return 0;
+//     }
+    
+//     int prev = 0, curr = 1;
+//     while (curr <= n) {
+//         int temp = curr;
+//         curr += prev;
+//         prev = temp;
+//     }
+//     return prev;
+// }
 
 int main(){
     int n = 33;

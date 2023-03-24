@@ -24,8 +24,8 @@ int isMercurial(int a[], int len){
 }
 
 int main(){
-    int ar[] = {5, 1, 10, 3, 15, 1, 2, 2};
+    int ar[] = {3, 2, 18, 1, 0, 3, -11, 1, 3};
 
-    printf("%d", isMercurial(ar, 8));
+    printf("%d", isMercurial(ar, 9));
     return 0;
 }
