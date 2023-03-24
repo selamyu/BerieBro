@@ -25,7 +25,6 @@ int is235Array(int a[ ], int len){
         return 0;
     }
 }
-//testing 
 int main(){
     int arr[] = {2, 3, 5, 7, 11};
     printf("%d", is235Array(arr, 5));
