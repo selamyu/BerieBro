@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 int isComplete(int a[ ], int len){
-    int count1 = 0, count2=0, count3=0;
+    int even = 0, square=0, sum=0;
     for (int i = 0; i < len; i++)
     {
         if (a[i]%2==0)
         {
-           count1 = 1;
+           even = 1;
         }   
     }
     for (int i = 0; i*i < len; i++)
     {
         if (i*i==a[i])
         {
-            count2 = 1;
+            square = 1;
         } 
     }
     for (int i = 0; i < len-1; i++)
@@ -22,12 +22,12 @@ int isComplete(int a[ ], int len){
         {
            if (a[i]+a[j]==8 && i!=j)
            {
-                count3 = 1;
+                sum = 1;
            } 
         } 
     }
     
-    if (count1, count2, count3)
+    if (even, square, sum)
     {
         return 1;
     }

@@ -10,7 +10,7 @@ int * computeHMS(int seconds) {
 }
 
 int main() {
-    int totalSeconds = 9876;
+    int totalSeconds = 60;
     int *result = computeHMS(totalSeconds);
     printf("%d seconds = %d hours, %d minutes, %d seconds\n", totalSeconds, result[0], result[1], result[2]);
     return 0;
