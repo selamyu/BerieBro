@@ -23,3 +23,5 @@ int main(){
     printf("%d", largestAdjacentSum(a,  6));
     return 0;
 }
+
+// this c code
