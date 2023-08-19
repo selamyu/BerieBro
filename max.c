@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+//we can find the mam and min nums
 int max(int num1, int num2){
     int result;
     if (num1 > num2)
