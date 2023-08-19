@@ -6,7 +6,7 @@ public class Account {
     private String customerPhone;
 
 
-    //we can also use this() instead.
+    //we can also use this() instead......
     public Account(){
         this("12346", 2.5, "Default name", "Defailt address", "default phone");
     }
